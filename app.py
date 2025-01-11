@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Sample tasks for the to-do list
 tasks = [
-    {'id': 1, 'task': 'Learn Flask'},
+    {'id': 1, 'task': 'Learn Flask framework'},
     {'id': 2, 'task': 'Build to-do app'},
     {'id': 3, 'task': 'Deploy to cloud'}
 ]
