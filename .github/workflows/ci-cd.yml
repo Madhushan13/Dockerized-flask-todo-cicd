@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t your-dockerhub-username/flask-todo-app .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-todo-app .
 
       - name: Log in to Docker Hub using Access Token
         uses: docker/login-action@v2
@@ -40,4 +40,4 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push your-dockerhub-username/flask-todo-app
+          docker push ${{ secrets.DOCKER_USERNAME }}/flask-todo-app
