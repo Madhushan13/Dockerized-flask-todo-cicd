@@ -6,7 +6,8 @@ app = Flask(__name__)
 tasks = [
     {'id': 1, 'task': 'Learn Flask framework'},
     {'id': 2, 'task': 'Build to-do application'},
-    {'id': 3, 'task': 'Deploy to cloud'}
+    {'id': 3, 'task': 'Deploy to cloud'},
+    {'id': 3, 'task': 'Test development environment'}
 ]
 
 @app.route('/')
